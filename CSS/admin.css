@@ -1,0 +1,610 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Maiandra GD;
+  margin: 0;
+}
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+html,
+body {
+  margin-top: 0;
+  padding: 0;
+  font-family: Maiandra GD;
+  scroll-padding-top: 200px;
+}
+
+body {
+  font-family: Maiandra GD;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*Header*/
+.HeaderHeader {
+  background: black;
+  height: 180px;
+  z-index: 1;
+  width: 100%;
+  box-shadow: -2px 5px 10px black;
+}
+
+.header_login {
+  margin-left: 10px;
+  font-size: 35px;
+  color: #cccccc;
+  text-shadow: 1px 1px 4px #ffffff;
+  padding-top: 60px;
+}
+
+.header_login a {
+  text-decoration: none;
+  float: right;
+  color: #cccccc;
+  font-size: 20px;
+  text-shadow: 3px 1px 4px #ffffff;
+  font-family: Maiandra GD;
+  padding-top: 10px;
+  padding-right: 70px;
+}
+
+.SearchButton {
+  background: Black;
+  color: #b3b3b3;
+  font-family: Maiandra GD;
+  border-width: 1px;
+}
+
+.login_register {
+  margin-top: -30px;
+  padding-top: -30px;
+  margin-right: 5%;
+}
+
+.login_register .image_login_register {
+  width: auto;
+  height: 25px;
+  float:right;
+}
+
+.login_register ul {
+  list-style-type: none;
+  margin: 0px;
+  padding-right: 50px;
+  overflow: hidden;
+  padding-top: 15px;
+}
+
+.login_register li {
+  float:right;
+  font-size: 18px;
+  color: #cccccc;
+  font-family: Maiandra GD;
+  display: block;
+}
+
+.login_register li a{
+  padding-left: 10px;
+  text-decoration: none;
+  color: #cccccc;
+}
+
+.login_register li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.logo {
+  float: left;
+  width: 280px;
+  height: 120px;
+}
+
+/*Footer*/
+.FooterFooter {
+  background-color: black;
+  font-family: Maiandra GD;
+  height: 280px;
+  padding: 30px;
+  min-width: 1500px;
+}
+
+.FFooterIcon {
+  margin-left: 10px;
+  margin-top: 20px;
+  float: left;
+}
+
+.FFooterBlocks {
+  font-family: Maiandra GD;
+  color: #b3b3b3;
+  background-color: black;
+  width: 270px;
+  height: 90px;
+  display: inline;
+  float: right;
+}
+
+.FFooterBlocks h3 {
+  text-align: left;
+  margin-left: 15%;
+  list-style-type: none;
+  text-align: left;
+}
+
+.FFooterIcon img {
+  width: 300px;
+  height: 130px;
+}
+
+#FooterLine {
+  border-top: #b3b3b3;
+  position: relative;
+}
+
+.FFooterUpperPortion {
+  height: 140px;
+}
+
+.FFooterLowerPortion {
+  text-align: center;
+}
+
+.Disclaimer {
+  color: #b3b3b3;
+}
+
+/* Dashboard */
+.admin-title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.admin-title hr {
+  width: 87%;
+  border-width: 5px;
+}
+
+.admin-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.admin-container {
+  float: left;
+  width: 50%;
+  padding: 50px 100px;
+}
+
+/* Button Animation */
+.wrapper {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.link_wrapper {
+  position: relative;
+}
+
+.link_wrapper a {
+  display: block;
+  width: 400px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  transition: all 0.35s;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all 0.35s;
+}
+
+.icon svg {
+  width: 30px;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #2ecc71;
+  transition: all 0.35s;
+}
+
+.link_wrapper a:hover {
+  width: 400px;
+  border: 3px solid #2ecc71;
+  background: transparent;
+  color: #2ecc71;
+}
+
+.link_wrapper a:hover + .icon {
+  border: 3px solid #2ecc71;
+  right: -25%;
+}
+
+/* Clock */
+.clock-box {
+  margin: auto;
+  width: 50%;
+  padding: 3em 1.5em;
+  background-image: linear-gradient(45deg, #ede5f1, #1d1d1d);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  animation: bgblob 4s infinite 0.5s;
+  margin-bottom: 200px;
+}
+
+.clock,
+.date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  text-shadow: 0 5px 5px #000000bb;
+}
+
+.clock {
+  font-size: 6.5em;
+  line-height: 1.5em;
+}
+
+.date {
+  font-size: 3em;
+}
+
+@keyframes bgblob {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+
+  25% {
+    border-radius: 75% 25% 45% 55% / 30% 30% 70% 70%;
+  }
+
+  50% {
+    border-radius: 61% 39% 27% 73% / 62% 77% 23% 38%;
+  }
+
+  75% {
+    border-radius: 30% 62% 74% 26% / 75% 57% 43% 25%;
+  }
+
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+}
+
+/* Tables */
+.displayTable {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  border: 2px solid #b3adad;
+  border-collapse: collapse;
+  padding: 6px;
+}
+.displayTable th {
+  border: 2px solid #b3adad;
+  padding: 6px;
+  background: #f0f0f0;
+  color: #313030;
+}
+.displayTable td {
+  border: 2px solid #b3adad;
+  text-align: center;
+  padding: 6px;
+  background: #ffffff;
+  color: #313030;
+}
+
+/* Insert Record */
+.padCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(238, 238, 238);
+  width: 87%;
+}
+
+.report {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 250px;
+}
+
+.report h1 {
+  font-size: 55px;
+  text-align: center;
+}
+
+.report hr {
+  width: 87%;
+  border-width: 5px;
+}
+
+.reptoppart {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+}
+
+.reptoppart input {
+  display: inline;
+  height: 24px;
+  padding-left: 5px;
+}
+
+.rep_select {
+  display: inline;
+}
+
+.rep_select select{
+  height: 24px;
+}
+
+.repbotpart {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.noresults {
+  font-weight: bolder;
+  margin: auto;
+  text-align: center;
+  color: darkred;
+}
+
+/* For Link Buttons */
+a.butt {
+  display: inline;
+}
+
+.button {
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/*For Header Section in Dashboard*/
+.summaryColumn {
+  margin-bottom: 100px;
+}
+
+.section-header {
+  font-size: 30px;
+  text-align: center;
+}
+
+.section-header-hr {
+  overflow: visible;
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+  width: 50%;
+}
+.section-header-hr:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+/*Extra Css for PHP validation*/
+.error {
+  color: red;
+  font-size: 13px;
+  font-family: Maiandra GD;
+}
+
+.correct {
+  color: green;
+  font-size: 20px;
+  font-family: Maiandra GD;
+}
+
+.correct-record {
+  color: green;
+  font-size: 20px;
+  font-family: Maiandra GD;
+  text-align: center;
+  font-weight: bold;
+}
+
+.errorGender {
+  padding-top: 7px;
+  font-size: 13px;
+  font-family: Maiandra GD;
+  color: red;
+}
+
+.errorTerms {
+  padding-top: 7px;
+  font-size: 13px;
+  font-family: Maiandra GD;
+  color: red;
+}
+
+/* Forms */
+.column-form {
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+
+.column-form .columnB-form {
+  width: 55%;
+  text-align: center;
+  margin-top: 25px;
+  margin: auto;
+  background-color: rgb(238, 238, 238);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.384);
+}
+
+.columnB-form h1 {
+  font-size: 45px;
+}
+
+.formTable {
+  table-layout: fixed;
+  width: 70%;
+  height: 100%;
+  border: 0px none #ffffff;
+  border-collapse: collapse;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formTable th {
+  border-bottom: 2px solid #000000;
+  padding: 10px;
+  color: #313030;
+  font-size: 24px;
+}
+.formTable td {
+  border: 0px none;
+  text-align: center;
+  padding: 7px;
+  color: #313030;
+}
+
+.formTable td label {
+  margin-left: 22%;
+  float: left;
+  padding-right: 6px;
+  font-size: 18px;
+}
+
+.formTable td input {
+  width: 70%;
+  padding: 4px 8px;
+  margin: 3px 0;
+  box-sizing: border-box;
+}
+
+.formTable td input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 25px 0 25px 0;
+}
+
+td input[type="button"] {
+  padding: 10px;
+}
+
+td input[type="reset"] {
+  padding: 10px;
+}
+
+.formTable td input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+
+.formTable td #state {
+  width: 70%;
+  padding: 4px 8px;
+  margin: 3px 0;
+  box-sizing: border-box;
+}
+
+/* Tables */
+.displayTable {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  border: 2px solid #b3adad;
+  border-collapse: collapse;
+  padding: 6px;
+}
+.displayTable th {
+  border: 2px solid #b3adad;
+  padding: 6px;
+  background: #f0f0f0;
+  color: #313030;
+}
+.displayTable td {
+  border: 2px solid #b3adad;
+  text-align: center;
+  padding: 6px;
+  background: #ffffff;
+  color: #313030;
+}
+
+/* Charts */
+.barChart-container {
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
+  width: 60%;
+  height: 50vm;
+}
+
+.pieChart-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  height: 35vh;
+}
