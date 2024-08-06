@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?php session_start(); phpinfo(); ?>
 
 <!DOCTYPE html>
 <!--Procurred by Chong Yun Sin 74455, Than Ye Hong 76990, Tang Jhen Nee 77363, Liew Yu Heng 77313-->
